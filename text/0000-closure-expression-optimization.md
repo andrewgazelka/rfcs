@@ -25,7 +25,7 @@ polars open large.parquet | polars into-nu | where { $in.status == "active" }
 
 The entire parquet file is loaded into memory before filtering, rather than letting Polars apply the predicate during scan.
 
-SQL optimizers have done predicate pushdown for decades because `σ(A ⋈ B) ≡ σ(A) ⋈ σ(B)` when the predicate only touches A's columns. Nushell could benefit from the same optimization if closures were analyzable.
+SQL optimizers have done predicate pushdown for decades because $$\sigma(A \bowtie B) \equiv \sigma(A) \bowtie B$$ when the predicate only touches A's columns. Nushell could benefit from the same optimization if closures were analyzable.
 
 The key insight is that nushell already parses closures into an AST—they aren't compiled to opaque bytecode like Python lambdas. The infrastructure exists; we just need to build the analysis pass.
 
