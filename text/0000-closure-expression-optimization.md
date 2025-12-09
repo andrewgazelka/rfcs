@@ -1,6 +1,6 @@
 - Feature Name: closure_expression_optimization
-- Start Date: 2024-12-08
-- RFC PR: [nushell/rfcs#0000](https://github.com/nushell/rfcs/pull/0000)
+- Start Date: 2025-12-08
+- RFC PR: [nushell/rfcs#8](https://github.com/nushell/rfcs/pull/8)
 - Nushell Issue: [nushell/nushell#0000](https://github.com/nushell/nushell/issues/0000)
 
 # Summary
